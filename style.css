@@ -71,20 +71,7 @@ body{
     font-size: 30px;
   }
 
-  .grid-container{
-  display: grid;
-  grid-template-columns: 400px  600px ;
-  gap: 10px;
-  background-color: #ACC8E5;
-  justify-content: center;
-  }
-
-  .grid-container > div {
-    padding: 20px 0;
-    font-size: 30px;
-    color: #112A46
-    
-  }
+  
   
   .about{
     text-indent: 30px;
@@ -106,9 +93,11 @@ body{
     text-indent: 20px;
   }
   .form{
-    /*padding-left: 100px;*/
-    margin-left: 100px;
-    width: 600px;
+    margin-left: 5%;
+    
+    width: auto;
+    max-width: 600px;
+    height: auto;
    
   }
   .form > .mb-3 > #exampleFormControlInput1{
@@ -121,6 +110,10 @@ body{
     height: 200px;
     
   }
+
+ 
+    
+  
   .contact{
     text-indent: 95px;
     margin-top: 0%;
@@ -151,6 +144,37 @@ body{
     height: 90px;
     width:90px;
   }
+  
+  /*About me Css*/
+  .card{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.image{
+    flex: 1 1 120px;
+    aspect-ratio: 1/1;
+    text-align: center;
+    
+}
+.image>img{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+   
+}
+.content{
+    flex: 1 1 200px;
+    font-size: 30px;
+  
+}
+.size{
+    width:auto;
+    height: auto;
+    margin-left: 10%;
+    margin-right:10%;
+}
+
 
  @media screen and (max-width: 360px) {
   .intro > h1{
@@ -199,27 +223,9 @@ body{
     font-size: 30px;
     text-align: center;
   }
-  .grid-container{
-    display: grid;
-   
-    grid-template-columns: 200px  100px ;
-    gap: 0px;
-    background-color: #ACC8E5;
-   
-    }
-    .grid-container > .grid-item2{
-      font-size: 20px;
-      margin-top: 200px;
-      margin-left: 10%;
-      width: 250px;
-      height: auto;
-      background-color: rgba(255, 255, 255, 0.664);
-    }
-  
-    .grid-container > div {
-
-      color: #112A46
-      
-    }
+  .form > .btn-text-left{
+    text-align: center;
+  }
+ 
 }
  
