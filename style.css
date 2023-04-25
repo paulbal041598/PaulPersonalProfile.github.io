@@ -1,8 +1,9 @@
 
   .pic{
-    margin-top: 70px;
-    height: 150px;
-    width: 150px;
+    object-fit: cover;
+    margin-top: 40px;
+    height:200px;
+    width: 200px;
     border-radius: 50%;
     background-color:whitesmoke;
     
@@ -14,50 +15,48 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-   
+    font-family: Roboto Slab;
     line-height: 0px;  
+    color:#112A46;
 }
 .intro > h1{
     font-size: 96px;
-    color: white;
+    
 }
 .intro > h2{
     font-size: 30px;
-    color: white;
+   
 }
 body{
-    background-color: #284272 ;
+    background-color: #ACC8E5 ;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: 0;
+  margin-top: 20px;
+}
+.flex-container > button  {
+  background-color: rgb(255, 255, 255);
+  color: #112A46;
+  width: 190px;
+  margin: 10px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+  border-radius: 20px;
 }
 
-.flex-container {
-    display: flex;
-    justify-content: space-around;
-    background-color: ;
-    margin-top: 20px;
-  }
-  
-  .flex-container > button  {
-    background-color: rgb(255, 255, 255);
-    color:#315baa ;
-    width: 190px;
-    margin: 10px;
-    text-align: center;
-    line-height: 50px;
-    font-size: 30px;
-    border-radius: 20px;
-    
-  }
   .project{
     margin-top: 0%;
     font-size: 80px;
-    color: white;
+    color:#112A46;
     text-align: center;
 }
 .project-flex-container {
     display: flex;
     flex-wrap: wrap;
-    background-color: #284272;
+    background-color: #ACC8E5;
     justify-content:center;
   }
   
@@ -76,13 +75,14 @@ body{
   display: grid;
   grid-template-columns: 400px  600px ;
   gap: 10px;
-  background-color: #284272;
+  background-color: #ACC8E5;
   justify-content: center;
   }
 
   .grid-container > div {
     padding: 20px 0;
     font-size: 30px;
+    color: #112A46
     
   }
   
@@ -90,12 +90,14 @@ body{
     text-indent: 30px;
     margin-top: 0%;
     font-size: 80px;
-    color: white;
+    color: #112A46;
     text-align: left;
 
   }
-  .grid-item1{
+  .grid-item1 > img{
     background-color: #D9D9D9;
+    height: 450px;
+    width:350px;
   }
   .grid-item2{
     color:white;
@@ -123,7 +125,7 @@ body{
     text-indent: 95px;
     margin-top: 0%;
     font-size: 80px;
-    color: white;
+    color: #112A46;
     text-align: left;
     margin-bottom: 10px;
 
@@ -142,7 +144,6 @@ body{
     justify-content: center;
     justify-content: space-around;
     align-items: center;
-   
     color:white;
    
   }
@@ -150,3 +151,75 @@ body{
     height: 90px;
     width:90px;
   }
+
+ @media screen and (max-width: 360px) {
+  .intro > h1{
+    font-size: 60px;
+    text-align: center;
+  }
+  .intro > h2{
+    font-size: 30px;
+   text-align: center;
+  }
+  .flex-container > button{
+    width: 90px;
+    height: 70px;;
+    font-size: 15px;
+    font-weight: bold;
+  } 
+  .project{
+    font-size: 40px;
+  }
+
+  .contact{
+    font-size: 40px;
+    text-align: center;
+    text-indent: 0px;
+  }
+
+  .form{
+    width: 340px;
+    margin:10px;
+  }
+
+  .icon{
+ 
+    padding:40px;
+    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+}
+  
+  .icon>svg{
+    width:50px;
+    height:50px;
+    color:#112A46
+  }
+  .about{
+    font-size: 30px;
+    text-align: center;
+  }
+  .grid-container{
+    display: grid;
+   
+    grid-template-columns: 200px  100px ;
+    gap: 0px;
+    background-color: #ACC8E5;
+   
+    }
+    .grid-container > .grid-item2{
+      font-size: 20px;
+      margin-top: 200px;
+      margin-left: 10%;
+      width: 250px;
+      height: auto;
+      background-color: rgba(255, 255, 255, 0.664);
+    }
+  
+    .grid-container > div {
+
+      color: #112A46
+      
+    }
+}
+ 
